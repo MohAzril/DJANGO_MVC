@@ -1,1 +1,1 @@
-# DJANGO_MVC
+# https://mohazril.pythonanywhere.com/blog/
