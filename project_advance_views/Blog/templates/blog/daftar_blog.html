@@ -1,0 +1,32 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <br>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-2 col-12 marginmid">
+            <a class="btn marginmid white" href="/blog/form" style="background-color:lightseagreen;">New Post</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    {% for b in isi %}
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-12">
+            <img src="{{b.gambar}}" style="max-width:690;">
+        </div>
+    </div>
+    <br>
+    <h2 class="blogh2">{{b.title}}</h2>
+    <p class="blogp">{{b.deskripsi}}</p>
+    <a class="blue bloga" href="#">Baca Selengkapnya</a>
+    <br>
+    <br>    
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+{% endblock %}

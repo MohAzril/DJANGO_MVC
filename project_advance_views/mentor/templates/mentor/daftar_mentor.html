@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+<div class="content container">
+    <br><br>
+    <h3 class="marginmid">Our Mentor</h3>
+    <br><br>
+    {% for m in mentor %}
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-12">
+            <img style="max-width: 260px;"src="{{m.gambar}}">       
+        </div>
+        <div class="col-md-6 col-12">
+            <h3 style="color:lightgray">{{m.nama}}</h3>
+            <p>{{m.deskripsi}}</p>
+            <p>"{{m.quote}}"</p>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    
+    
+</div>
+{% endblock %}

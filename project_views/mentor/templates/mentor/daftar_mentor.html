@@ -1,0 +1,44 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+<div class="content container">
+    <br><br>
+    <h3 class="marginmid">Our Mentor</h3>
+    <br><br>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-12">
+            <img style="max-width: 260px;"src="{% static 'images/people-andreas.png' %}">       
+        </div>
+        <div class="col-md-6 col-12">
+            <h3 style="color:lightgray">Andreas Nugroho</h3>
+            <p>Software Ninja (5 years experience)</p>
+            <p>"Great place to learn about programing. Come join us! "</p>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-12">
+            <img style="max-width: 260px;"src="{% static 'images/people-ramdhan.png' %}">       
+        </div>
+        <div class="col-md-6 col-12">
+            <h3 style="color:lightgray">Ramdhan Hidayat</h3>
+            <p>Master of Chaos (10 years experience)</p>
+            <p>"We make this program with passion, hard work and heart. Let's get rock with us!"</p>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-12">
+            <img style="max-width: 260px;"src="{% static 'images/people-trimo.png' %}">       
+        </div>
+        <div class="col-md-6 col-12">
+            <h3 style="color:lightgray">Trimo Leksono</h3>
+            <p>Magician (8 years experience)</p>
+            <p>"The best place for who want to be a great IT talent"</p>
+        </div>
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>    
+</div>
+{% endblock %}
